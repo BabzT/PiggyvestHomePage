@@ -13,9 +13,12 @@ body{
 .container{
     color: black;
     display: flex;
+    flex-basis: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 li, a, button{
@@ -29,16 +32,15 @@ li, a, button{
     overflow: hidden;
     position: sticky;
     top: 0;
+    padding-left: 75px;
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     z-index: 20;
 }
 
 .logo{
     cursor: pointer;
-    margin-right: auto;
 }
 
 .nav_links{
@@ -86,8 +88,8 @@ li, a, button{
 .box1{
     
     justify-content: left;
-    margin-right: auto;
-    margin-left: 70px;
+    margin-right: 30px;
+    margin-left: 75px;
     margin-top: 50px;
     width: 580px;
     height: 700px;
@@ -134,7 +136,7 @@ li, a, button{
 }
 
 .headbox{
-    margin-right: 100px;
+    margin-right: 0;
     margin-left: 0px;
     margin-top: 50px;
     width: 500px;
@@ -146,10 +148,10 @@ li, a, button{
 
 .backg{
     background-color: whitesmoke;
-    height: 700px;
-    width: 330px;
+    height: 750px;
+    width: 350px;
     position: absolute;
-    margin-left: 860px;
+    margin-left: 900px;
     z-index: 1;
     
 }
@@ -221,13 +223,11 @@ li, a, button{
 
 .box2{
     text-align: justify;
-    margin-right: auto;
-    margin-left: 70px;
+    margin-left: 75px;
     margin-top: 50px;
     width: 90%;
     height: 400px;
     border-radius: 5px;
-    border: none;
 }
 
 .security{
@@ -260,7 +260,8 @@ li, a, button{
 .box3{
     text-align: justify;
     margin-top: 100px;
-    margin-left: 10px;
+    margin-left: 75px;
+    margin-right: 60px;
     padding-top: 20px;
     width: 350px;
     height: 350px;
@@ -272,6 +273,7 @@ li, a, button{
     text-align: justify;
     margin-top: 100px;
     padding: 25px;
+    margin-right: 50px;
     width: 350px;
     height: 350px;
     border-radius: 20px;
@@ -294,6 +296,8 @@ li, a, button{
 .box5{
     text-align: justify;
     margin-top: 200px;
+    margin-left: 75px;
+    margin-right: 100px;
     width: 400px;
     height: 500px;
     border-radius: 20px;
@@ -303,14 +307,13 @@ li, a, button{
 .box6{
     text-align: justify;
     margin-top: 200px;
-    margin-left: -50px;
+    margin-left: 0;
     margin-right: 50px;
     padding-top: 70px;
     padding-right: 70px;
     width: 500px;
     height: 500px;
     border-radius: 20px;
-    border: none;
 }
 
 #circle2{
@@ -339,34 +342,20 @@ li, a, button{
     background-color: rgb(0, 68, 255);
     text-align: justify;
     margin-top: 200px;
-    margin-left: 0;
     margin-right: 0;
     padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 250px;
-    flex-grow: 1;
-    width: 500px;
-    height: 550px;
-    border: none;
-    z-index: 10;
-}
-
-.box8{
-    text-align: justify;
-    margin-top: 200px;
-    margin-left: 0;
-    margin-right: 0;
-    width: 550px;
-    height: 550px;
-    border: none;   
-}
-
-.saver{
-    margin-left: -200px;
-    z-index: 9;
+    padding-left: 75px;
+    padding-right: 200px;
     width: 750px;
     height: 550px;
 }
+
+.saver{
+    margin-top: 200px;
+    height: 550px;
+    width: 599px;
+}
+
 
 .h6{
     color: white;
@@ -378,8 +367,9 @@ li, a, button{
     margin-top: 100px;
     width: 500px;
     height: 470px;
+    margin-left: 75px;
+    margin-right: 100px;
     border-radius: 5px;
-    border: none;
 }
 
 .tbox{
@@ -424,7 +414,6 @@ li, a, button{
     width: 550px;
     height: 470px;
     border-radius: 5px;
-    border: none;
 }
 
 .box11{
@@ -435,7 +424,6 @@ li, a, button{
     padding-left: 100px;
     width: 1400px;
     height: 200px;
-    border: none;
 }
 
 .image{
@@ -487,7 +475,6 @@ li, a, button{
     height: 200px;
     width: 150px;
     margin-left: 250px;
-    border: none;
 }
 
 .fbox2{
@@ -495,7 +482,6 @@ li, a, button{
     height: 200px;
     width: 150px;
     margin-left: 500px;
-    border: none;
 }
 
 .fbox3{
@@ -503,7 +489,6 @@ li, a, button{
     height: 200px;
     width: 150px;
     margin-left: 730px;
-    border: none;
 }
 
 .fbox4{
@@ -513,7 +498,6 @@ li, a, button{
     width: 250px;
     margin-left: 955px;
     padding-top: 15px;
-    border: none;
 }
 
 .fbox5{
@@ -524,7 +508,6 @@ li, a, button{
     width: 730px;
     margin-left: 250px;
     margin-top: 300px;
-    border: none;
 }
 
 .fbox5 p{
