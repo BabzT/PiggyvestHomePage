@@ -1,0 +1,154 @@
+.btn3 button{
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn4{
+    background-color: white;
+    display: inline-flex;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 2px solid whitesmoke;  
+}
+
+.btn5{
+    color: navy;
+    font-size: 135%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke; 
+}
+
+.btn6{
+    color: lightseagreen;
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.arrowright{
+position: absolute;
+border: solid rgb(54, 53, 53);
+border-width: 0 3px 3px 0;
+display: inline-block;
+margin-top: 10px;
+margin-left: -12px;
+padding: 3px;
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.arrowright2{
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    }
+
+.btn7{
+    color: green;
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn8{
+    color: rgba(241, 10, 106, 0.884);
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.dot2{
+    background-color: plum;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 10px;
+}
+
+#dotbox3{
+    position: absolute;
+    margin-top: 20px;   
+    margin-left: 360px;
+   
+}
+
+#dotbox4{
+    position: absolute;
+    margin-top: 20px;   
+    margin-left: 380px;
+    
+}
+
+.b6{
+    height: 40px;
+    width: 200px;
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
+.btn9{
+    color: white;
+    font-size: 120%;
+    background-color: rgb(0, 68, 255);
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 0px solid whitesmoke;  
+}
