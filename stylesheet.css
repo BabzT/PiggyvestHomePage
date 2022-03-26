@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+=======
+    font-family:  Arial, sans-serif;
+>>>>>>> c10e9c7 (update)
     font-size: 16px;          
 }
 
@@ -21,15 +25,9 @@ body{
     justify-content: space-evenly;
 }
 
-li, a, button{
-    color: black;
-    text-decoration: none;
-}
-
 #navbar{
     background-color: rgb(255, 251, 251);
     border-bottom: 1px solid rgb(243, 234, 234);
-    overflow: hidden;
     position: sticky;
     top: 0;
     padding-left: 70px;
@@ -41,6 +39,15 @@ li, a, button{
 
 .logo{
     cursor: pointer;
+}
+
+li, a, button{
+    color: black;
+    text-decoration: none;
+}
+
+a{
+    font-weight: 500;
 }
 
 .nav_links{
@@ -87,7 +94,7 @@ li, a, button{
 
 .box1{
     justify-content: left;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 50px;
     width: 580px;
     height: 700px;
@@ -109,10 +116,33 @@ li, a, button{
 }
 
 .btn3 button{
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn3 button{
     transition: all 0.5s ease 0s;
 }
 .btn3 button:hover{
     background-color: navy;
+}
+
+.btn4{
+    background-color: white;
+    display: inline-flex;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 2px solid whitesmoke;  
 }
 
 .buttontext, .buttonicon{
@@ -133,6 +163,15 @@ li, a, button{
     font-family: Georgia;
 }
 
+.backg{
+    background-color: whitesmoke;
+    height: 750px;
+    width: 350px;
+    position: absolute;
+    margin-left: 900px;
+    z-index: 1;  
+}
+
 .headbox{
     margin-right: 0;
     margin-left: 0px;
@@ -144,15 +183,7 @@ li, a, button{
     z-index: 2;
 }
 
-.backg{
-    background-color: whitesmoke;
-    height: 750px;
-    width: 350px;
-    position: absolute;
-    margin-left: 900px;
-    z-index: 1;
-    
-}
+
 
 .rect{ 
     margin-left: 140px;
@@ -265,6 +296,10 @@ li, a, button{
     border-radius: 20px;
 }
 
+.h3{
+    font-size: 250%;
+}
+
 .box4{
     background-color: whitesmoke;
     text-align: justify;
@@ -277,10 +312,6 @@ li, a, button{
     cursor: pointer;
 }
 
-.h3{
-    font-size: 250%;
-}
-
 .icon{
     width: 50px;
     height: 50px;
@@ -290,6 +321,18 @@ li, a, button{
     font-size: 130%;
 }
 
+.arrowright{
+    position: absolute;
+    border: solid rgb(54, 53, 53);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
 .box5{
     text-align: justify;
     margin-top: 200px;
@@ -297,17 +340,6 @@ li, a, button{
     height: 500px;
     border-radius: 20px;
     
-}
-
-.box6{
-    text-align: justify;
-    margin-top: 200px;
-    margin-right: 50px;
-    padding-top: 70px;
-    padding-right: 70px;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
 }
 
 #circle2{
@@ -327,6 +359,50 @@ li, a, button{
     margin-left: 130px;
 }
 
+.dot2{
+    background-color: plum;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 10px;
+}
+
+#dotbox3{
+    position: absolute;
+    margin-top: 20px;   
+    margin-left: 360px;
+   
+}
+
+#dotbox4{
+    position: absolute;
+    margin-top: 20px;   
+    margin-left: 380px;
+    
+}
+
+.box6{
+    text-align: justify;
+    margin-top: 200px;
+    margin-right: 50px;
+    padding-top: 70px;
+    padding-right: 70px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.b6{
+    height: 40px;
+    width: 200px;
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
 .h5{
     font-size: 280%;
 }
@@ -334,13 +410,24 @@ li, a, button{
 .box7{
     color: white;
     background-color: rgb(0, 68, 255);
+<<<<<<< HEAD
     margin-right: 0;
+=======
+    text-align: justify;
+    margin-top: 200px;
+>>>>>>> c10e9c7 (update)
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 4%;
     flex-basis: 60%;
     height: 100%;
+}
+
+.h6{
+    color: white;
+    font-size: 350%;
+    text-align: justify;
 }
 
 .saver{
@@ -354,10 +441,95 @@ li, a, button{
     background-color: red;
 }
 
+.btn5{
+    color: navy;
+    font-size: 135%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke; 
+}
 
-.h6{
+.btn6{
+    color: lightseagreen;
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn7{
+    color: green;
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn8{
+    color: rgba(241, 10, 106, 0.884);
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn9{
     color: white;
+<<<<<<< HEAD
     font-size: 60px;
+=======
+    font-size: 120%;
+    background-color: rgb(0, 68, 255);
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 0px solid whitesmoke;  
+}
+
+.arrowright2{
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+>>>>>>> c10e9c7 (update)
 }
 
 .box9{  
@@ -417,9 +589,13 @@ li, a, button{
 }
 
 .box11{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     color: black;
     background-color: whitesmoke;
     margin-top: 100px;
+<<<<<<< HEAD
     padding: 60px 70px;
     width: 100%;
     display: flex;
@@ -440,80 +616,66 @@ li, a, button{
 
 .himg{
     margin-top: 0;
+=======
+    padding: 50px;
+    width: 100%;
+    height: 200px;
+}
+
+.himg{
+>>>>>>> c10e9c7 (update)
     font-size: 250%;
     display: inline-block; 
 }
 
+.image{
+    display: inline-block;
+    height: 25px;
+    width: 150px;   
+}
+
 .box12{
-    border: none;
-    width: 1400px;
-    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
     margin-top: 100px;
-    padding: 0 70px;
+    padding: 0;
 }
 
 .flogo{
-    position: absolute;
-    margin-top: 15px;
+    display: inline-block;
+    
 }
 
 .fbox1{
-    position: absolute;
+    display: inline-block;
     height: 200px;
     width: 150px;
-    margin-left: 250px;
+    
 }
 
 .fbox2{
-    position: absolute;
+    display: inline-block;
     height: 200px;
     width: 150px;
-    margin-left: 500px;
+   
 }
 
 .fbox3{
-    position: absolute;
+    display: inline-block;
     height: 200px;
     width: 150px;
-    margin-left: 730px;
+    
 }
 
 .fbox4{
     text-align: right;
-    position: absolute;
+    display: inline-block;
     height: 200px;
     width: 250px;
-    margin-left: 955px;
     padding-top: 15px;
-}
-
-.fbox5{
-    font-size: 0.9em;
-    text-align: center;
-    position: absolute;
-    height: 150px;
-    width: 730px;
-    margin-left: 250px;
-    margin-top: 300px;
-}
-
-.fbox5 p{
-    font-size: 1em;
-    line-height: 30px;
-}
-
-
-.flist{
-    list-style: none;
-}
-
-.flist li a{
-    font-size: 0.9em;
-    line-height: 30px;
-}
-
-.flist li a:hover{
-    color: blue;
 }
 
 .fb{
@@ -535,6 +697,19 @@ li, a, button{
     margin-bottom: 20px;   
 }
 
+.flist{
+    list-style: none;
+}
+
+.flist li a{
+    font-size: 0.9em;
+    line-height: 30px;
+}
+
+.flist li a:hover{
+    color: blue;
+}
+
 .mail{
     font-size: 0.9em;
    
@@ -544,6 +719,7 @@ li, a, button{
     color: blue;
 }
 
+<<<<<<< HEAD
 .saversection{
     display: flex;
     width: 100%;
@@ -571,3 +747,28 @@ li, a, button{
         margin-top: 20px;
     }
 }
+=======
+.fbox5{
+    font-size: 0.9em;
+    text-align: center;
+    height: 150px;
+    width: 730px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.fbox5 p{
+    font-size: 1em;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+>>>>>>> c10e9c7 (update)
