@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: Georgia;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;          
 }
 
@@ -103,9 +103,9 @@ li, a, button{
 
 .text1{
     line-height: 30px;
-    font-size: 120%;
+    font-size: 20px;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .btn3 button{
@@ -334,27 +334,30 @@ li, a, button{
 .box7{
     color: white;
     background-color: rgb(0, 68, 255);
-    text-align: justify;
-    margin-top: 200px;
     margin-right: 0;
     padding-top: 50px;
-    padding-left: 75px;
-    padding-right: 200px;
-    width: 750px;
-    height: 550px;
+    padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 4%;
+    flex-basis: 60%;
+    height: 100%;
 }
 
 .saver{
-    margin-top: 200px;
-    height: 550px;
-    width: 599px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.saverimgdiv{
+    width: 40%;
+    height: 100%;
+    background-color: red;
 }
 
 
 .h6{
     color: white;
-    font-size: 350%;
-    text-align: justify;
+    font-size: 60px;
 }
 
 .box9{  
@@ -372,6 +375,7 @@ li, a, button{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
+    padding-right: 20px;
     width: 500px;
     height: fit-content;
     border-radius: 0px;
@@ -379,23 +383,26 @@ li, a, button{
 }
 
 .timg{
-    position: absolute;
-    display: inline-block;
     height: 50px;
     width: 50px;
     border-radius: 50%;
+}
+.reviewbox{
+    display: flex;
+    align-items: flex-start;
 }
 
 .date{
     opacity: 0.5;
     font-size: 80%;
-    margin-left: 200px;
+    text-align: right;
 }
 
 .ttext{
     opacity: 0.8;
     font-size: 90%;
-    margin-left: 60px;
+    margin-left: 10px;
+    margin-top: 0px;
     margin-right: 35px;
     
 }
@@ -413,39 +420,26 @@ li, a, button{
     color: black;
     background-color: whitesmoke;
     margin-top: 100px;
-    padding-top: 75px;
-    padding-left: 70px;
-    width: 1400px;
-    height: 200px;
+    padding: 60px 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.featured{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
 }
 
 .image{
-    position: absolute;
     height: 25px;
     width: 150px;
-    margin-top: 15px;
-    margin-left: 500px;
 }
 
-.image2{
-    position: absolute;
-    height: 25px;
-    width: 200px;
-    margin-top: 15px;
-    margin-left: 700px;
-}
-
-.image3{
-    position: absolute;
-    height: 25px;
-    width: 150px;
-    margin-top: 15px;
-    margin-left: 950px;
-}
 
 .himg{
     margin-top: 0;
-    position: absolute;
     font-size: 250%;
     display: inline-block; 
 }
@@ -550,4 +544,30 @@ li, a, button{
     color: blue;
 }
 
-
+.saversection{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+}
+@media screen and (max-width:905px) {
+    .saversection{
+        flex-direction: column;
+        width: 100%;
+    }
+    .saverimgdiv{
+        width: 100%;
+    }
+    .box7{
+        width: 100%;
+    }
+    .box11{
+        flex-direction: column;
+    }
+    .featured{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        margin-top: 20px;
+    }
+}
