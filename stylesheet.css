@@ -42,10 +42,6 @@ li, a, button{
     text-decoration: none;
 }
 
-a{
-    font-weight: 500;
-}
-
 .nav_links{
     list-style: none;
 }
