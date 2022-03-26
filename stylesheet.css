@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family:  Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;          
 }
 
@@ -433,6 +433,99 @@ a{
 }
 
 .saver{
+    margin-top: 200px;
+    height: 550px;
+    width: 599px;
+}
+
+.btn5{
+    color: navy;
+    font-size: 135%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke; 
+}
+
+.btn6{
+    color: lightseagreen;
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn7{
+    color: green;
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn8{
+    color: rgba(241, 10, 106, 0.884);
+    font-size: 120%;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn9{
+    color: white;
+    font-size: 120%;
+    background-color: rgb(0, 68, 255);
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 0px solid whitesmoke;  
+}
+
+.arrowright2{
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.saver{
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -590,13 +683,19 @@ a{
     color: black;
     background-color: whitesmoke;
     margin-top: 100px;
-    padding: 50px;
+    padding: 60px 70px;
     width: 100%;
     height: 200px;
 }
 
 .himg{
     margin-top: 0;
+    padding: 50px;
+    width: 100%;
+    height: 200px;
+}
+
+.himg{
     padding: 50px;
     width: 100%;
     height: 200px;
@@ -698,13 +797,10 @@ a{
     color: blue;
 }
 
-.fbox5{
-    font-size: 0.9em;
-    text-align: center;
-    height: 150px;
-    width: 730px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+.saversection{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
 }
 
 
