@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;          
+    font-size: 15px;          
 }
 
 body{
@@ -21,11 +21,7 @@ body{
     justify-content: space-evenly;
 }
 
-li, a, button{
-    color: black;
-    text-decoration: none;
-}
-
+/* NAVIGATION BAR */
 #navbar{
     background-color: rgb(255, 251, 251);
     border-bottom: 1px solid rgb(243, 234, 234);
@@ -51,6 +47,11 @@ li, a, button{
     font-size: 2em;
     display: inline-block;
     padding: 0px 20px;
+}
+
+li, a, button{
+    color: black;
+    text-decoration: none;
 }
 
 .btn1 button{
@@ -85,27 +86,39 @@ li, a, button{
     background-color: navy;
 }
 
+/* SECTION ONE */
+
+.backg{
+    background-color: whitesmoke;
+    height: 850px;
+    width: 350px;
+    position: absolute;
+    margin-left: 900px;
+    z-index: 1;   
+}
+
+.section1{
+    display: flex;
+    margin-top: 150px;
+    padding: 0 5%;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .box1{
     justify-content: left;
-    margin-right: 30px;
-    margin-top: 50px;
-    width: 580px;
-    height: 700px;
-    border-radius: 5px;
-    border: none;
+    width: 45%;
+    padding-bottom: 50px;
 }
 
 .h1{
-    font-size: 410%;
-    text-align: justify;
+    font-size: 65px;
     padding-top: 70px;
 }
 
 .text1{
     line-height: 30px;
-    font-size: 20px;
-    text-align: left;
-    margin-top: 2%;
+    font-size: 17px;
 }
 
 .btn3 button{
@@ -133,26 +146,35 @@ li, a, button{
     font-family: Georgia;
 }
 
+.btn3 button{
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn4{
+    background-color: white;
+    display: inline-flex;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 2px solid whitesmoke;  
+}
+
 .headbox{
-    margin-right: 0;
-    margin-left: 0px;
-    margin-top: 50px;
-    width: 500px;
-    height: 700px;
-    border-radius: 5px;
-    border: none;
+    width: 45%;
     z-index: 2;
 }
 
-.backg{
-    background-color: whitesmoke;
-    height: 750px;
-    width: 350px;
-    position: absolute;
-    margin-left: 900px;
-    z-index: 1;
-    
-}
+
 
 .rect{ 
     margin-left: 140px;
@@ -219,66 +241,123 @@ li, a, button{
     z-index: 2;
 }
 
-.box2{
+/* SECTION TWO */
+
+.section2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 200px;
+    width: 100%;
+    padding-right: 100px;
+}
+
+.secure{
+    width:70%;
+    display: flex;
     text-align: justify;
-    margin-top: 50px;
-    width: 90%;
-    height: 400px;
-    border-radius: 5px;
+    align-items: center;
 }
 
 .security{
-    position: absolute;
     width: 95px;
     height: 110px;
-    margin-top: 180px;
-    margin-left: 280px;
+    margin-right: 50px;
 }
 
 .h2{
-    font-size: 200%;
-    padding-top: 150px;
-    padding-left: 400px;
+    font-size: 40px;
 }
 
 .text2{
-    margin-top: 5px;
-    margin-bottom: 25px;
-    padding-right: 100px;
-    padding-left: 400px;
+    font-size: 17px;
     line-height: 30px;
 }
 
 .lm{
     color: blue;
-    padding-left: 400px;
+}
+
+/* SECTION THREE */
+
+.section3{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    padding-left: 5%;
+    justify-content: space-between;
 }
 
 .box3{
     text-align: justify;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 60px;
-    padding-top: 20px;
-    width: 350px;
-    height: 350px;
-    border-radius: 20px;
+    padding: 25px 0;
+    width: 25%;
 }
 
-.box4{
+.piggybank{
     background-color: whitesmoke;
     text-align: justify;
-    margin-top: 100px;
     padding: 25px;
-    margin-right: 50px;
-    width: 350px;
-    height: 350px;
+    width: 27%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.safelock{
+    background-color: whitesmoke;
+    text-align: justify;
+    padding: 25px;
+    width: 27%;
     border-radius: 20px;
     cursor: pointer;
 }
 
 .h3{
-    font-size: 250%;
+    font-size: 40px;
+}
+
+.btn5{
+    color: navy;
+    font-size: 20px;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 70px;
+    border-radius: 10px;
+    cursor: pointer; 
+    border: 1px solid whitesmoke; 
+}
+
+.btn6{
+    color: lightseagreen;
+    font-size: 20px;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.arrowright{
+position: absolute;
+border: solid rgb(54, 53, 53);
+border-width: 0 3px 3px 0;
+display: inline-block;
+margin-top: 12px;
+margin-left: -12px;
+padding: 3px;
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.h4{
+    font-size: 22px;
 }
 
 .icon{
@@ -286,28 +365,78 @@ li, a, button{
     height: 50px;
 }
 
-.h4{
-    font-size: 130%;
+/* SECTION FOUR */
+
+.section4{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.emptybox{
+    padding: 25px 0;
+    width: 350px;
+    height: 350px;
+}
+
+.target{
+    background-color: whitesmoke;
+    text-align: justify;
+    padding: 25px;
+    width: 27%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.flex{
+    background-color: whitesmoke;
+    text-align: justify;
+    padding: 25px;
+    width: 27%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn7{
+    color: green;
+    font-size: 20px;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+.btn8{
+    color: rgba(241, 10, 106, 0.884);
+    font-size: 20px;
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    padding: 10px;
+    margin-top: 75px;
+    border-radius: 10px;
+    cursor: pointer; 
+    border: 1px solid whitesmoke;  
+}
+
+/* SECTION FIVE */
+
+.section5{
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .box5{
-    text-align: justify;
-    margin-top: 200px;
-    width: 400px;
-    height: 500px;
-    border-radius: 20px;
-    
-}
-
-.box6{
-    text-align: justify;
-    margin-top: 200px;
-    margin-right: 50px;
-    padding-top: 70px;
-    padding-right: 70px;
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
+    width: 40%;
 }
 
 #circle2{
@@ -327,44 +456,123 @@ li, a, button{
     margin-left: 130px;
 }
 
+.dot2{
+    background-color: plum;
+    border-radius: 50%;
+    opacity: 0.5;
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 10px;
+}
+
+#dotbox3{
+    position: absolute;
+    margin-top: 20px;   
+    margin-left: 360px;
+   
+}
+
+#dotbox4{
+    position: absolute;
+    margin-top: 20px;   
+    margin-left: 380px;
+    
+}
+
+.box6{
+    text-align: justify;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    padding-right: 15px;
+    width: 39%
+}
+
 .h5{
-    font-size: 280%;
+    font-size: 52px;
+    margin-top: 0;
+}
+
+.b6{
+    height: 40px;
+    width: 200px;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: 0px solid black;
+    border-radius: 20px;
+}
+
+/* SECTION SIX */
+
+.section6{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
 }
 
 .box7{
     color: white;
     background-color: rgb(0, 68, 255);
-    margin-right: 0;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 5%;
     padding-right: 4%;
-    flex-basis: 60%;
-    height: 100%;
+    flex-basis: 60%; 
 }
-
-.saver{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.saverimgdiv{
-    width: 40%;
-    height: 100%;
-    background-color: red;
-}
-
 
 .h6{
     color: white;
     font-size: 60px;
 }
 
-.box9{  
+.btn9{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(0, 68, 255);
+    width: auto;
+    padding: 10px;
+    margin-top: 5%;
+    border-radius: 10px;
+    cursor: pointer; 
+    border: 0px solid whitesmoke;  
+}
+
+.arrowright2{
+    position: absolute;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -12px;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    }
+
+.saver{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.saverimgdiv{
+    width: 40%;
+}
+
+/* SECTION SEVEN */
+
+.section7{
+    display: flex;
     margin-top: 100px;
-    width: 500px;
-    height: 470px;
-    margin-right: 90px;
+    width: 100%;
+    padding: 0 5%;
+    justify-content: space-between;
+}
+
+.box9{  
+    width: 42%;
+    padding-bottom: 10px;
     border-radius: 5px;
 }
 
@@ -376,9 +584,7 @@ li, a, button{
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    width: 500px;
-    height: fit-content;
-    border-radius: 0px;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -394,32 +600,30 @@ li, a, button{
 
 .date{
     opacity: 0.5;
-    font-size: 80%;
+    font-size: 13px;
     text-align: right;
 }
 
 .ttext{
     opacity: 0.8;
-    font-size: 90%;
+    font-size: 13px;
+    margin-top: 0;
     margin-left: 10px;
-    margin-top: 0px;
-    margin-right: 35px;
-    
+    margin-right: 35px;  
 }
 
 .box10{ 
-    padding-top: 50px;
-    padding-right: 20px; 
-    margin-top: 100px;
-    width: 550px;
-    height: 470px;
-    border-radius: 5px;
+    padding-top: 50px; 
+    padding-bottom: 10px;
+    width: 40%;
 }
 
-.box11{
+/* SECTION EIGHT */
+
+.section8{
     color: black;
     background-color: whitesmoke;
-    margin-top: 100px;
+    margin-top: 150px;
     padding: 60px 70px;
     width: 100%;
     display: flex;
@@ -432,74 +636,53 @@ li, a, button{
     justify-content: space-evenly;
 }
 
+.himg{
+    font-size: 45px;
+}
+
 .image{
     height: 25px;
     width: 150px;
 }
 
+/* SECTION NINE */
 
-.himg{
-    margin-top: 0;
-    font-size: 250%;
-    display: inline-block; 
-}
-
-.box12{
-    border: none;
-    width: 1400px;
-    height: 500px;
+.section9{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 100px;
-    padding: 0 70px;
+    padding: 0 65px;
 }
 
 .flogo{
-    position: absolute;
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
-.fbox1{
-    position: absolute;
-    height: 200px;
+.fbox{
     width: 150px;
-    margin-left: 250px;
-}
-
-.fbox2{
-    position: absolute;
     height: 200px;
-    width: 150px;
-    margin-left: 500px;
-}
-
-.fbox3{
-    position: absolute;
-    height: 200px;
-    width: 150px;
-    margin-left: 730px;
 }
 
 .fbox4{
     text-align: right;
-    position: absolute;
-    height: 200px;
     width: 250px;
-    margin-left: 955px;
-    padding-top: 15px;
+    height: 200px;
+    margin-top: 20px;
 }
 
-.fbox5{
-    font-size: 0.9em;
-    text-align: center;
-    position: absolute;
-    height: 150px;
-    width: 730px;
-    margin-left: 250px;
-    margin-top: 300px;
+.social{
+    width: 100px;
+    margin-left: 150px;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
-.fbox5 p{
-    font-size: 1em;
-    line-height: 30px;
+.fb{
+    width: 27px;
+    height: 27px;    
 }
 
 
@@ -516,58 +699,18 @@ li, a, button{
     color: blue;
 }
 
-.fb{
-    width: 27px;
-    height: 27px; 
-    margin-bottom: 20px; 
-    margin-left: 150px;   
-}
-
-.twi{
-    width: 27px;
-    height: 27px; 
-    margin-bottom: 20px;    
-}
-
-.insta{
-    width: 27px;
-    height: 27px; 
-    margin-bottom: 20px;   
-}
-
 .mail{
-    font-size: 0.9em;
-   
+    font-size: 0.9em;  
 }
 
 .mail:hover{
     color: blue;
 }
 
-.saversection{
-    display: flex;
-    width: 100%;
-    margin-top: 200px;
-}
-@media screen and (max-width:905px) {
-    .saversection{
-        flex-direction: column;
-        width: 100%;
-    }
-    .saverimgdiv{
-        width: 100%;
-    }
-    .box7{
-        width: 100%;
-    }
-    .box11{
-        flex-direction: column;
-    }
-    .featured{
-        flex-direction: column;
-        align-items: center;
-    }
-    .image{
-        margin-top: 20px;
-    }
+.section10{
+    text-align: center;
+    width: 80%;
+    margin: 100px 0;
+    padding: 0 5%;
+    line-height: 30px;
 }
