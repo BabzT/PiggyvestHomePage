@@ -752,7 +752,7 @@ transform: rotate(-45deg);
 }
 
 .logo{
-    padding-left: 0;
+    padding-left: 20px;
     padding-top: 8px;
 }
 
@@ -847,7 +847,7 @@ transform: rotate(-45deg);
 
 .box1{
     text-align: center;
-    width: 90%;
+    width: 100%;
     padding-bottom: 50px;
 }
 
@@ -864,16 +864,16 @@ transform: rotate(-45deg);
 }
 
 .headbox{
-    width: 90%;
+    width: 100%;
     margin-top: 30px;
 }
 
 .rect{ 
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .rent{
-    margin-left: -60px;
+    margin-left: -40px;
 }
 
 .headerimg{
@@ -881,7 +881,7 @@ transform: rotate(-45deg);
 }
 
 .investify{
-    margin-left: 240px;
+    margin-left: 200px;
 }
 
 #circle1{
@@ -980,6 +980,10 @@ transform: rotate(-45deg);
     width: 90%;
 }
 
+.invest{
+    margin-left: 85px;
+}
+
 #dotbox3{
     display: none;
 }
@@ -989,7 +993,7 @@ transform: rotate(-45deg);
 }
 
 .box6{
-    width: 90%;
+    width: 100%;
     margin-top: 500px;
     text-align: center;
 }
