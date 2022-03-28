@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;          
+    font-size: 15px; 
+    list-style: none;
+    text-decoration: none;         
 }
 
 body{
@@ -21,41 +23,42 @@ body{
     justify-content: space-evenly;
 }
 
-/* NAVIGATION BAR */
-#navbar{
-    background-color: rgb(255, 251, 251);
-    border-bottom: 1px solid rgb(243, 234, 234);
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    padding-left: 70px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 20;
-}
-
-.logo{
-    cursor: pointer;
-}
-
-.nav_links{
-    list-style: none;
-}
-
-.nav_links li{
-    font-size: 2em;
-    display: inline-block;
-    padding: 0px 20px;
-}
+/* HEADER BAR */
 
 li, a, button{
     color: black;
     text-decoration: none;
 }
 
+.header{
+    background-color: white;
+    box-shadow: 1px 1px 4px 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-items: space-evenly;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.menu li{
+    font-size: 2em;
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.logo{
+    cursor: pointer;
+    padding-left: 70px;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
 .btn1 button{
-    margin-left: 250px;
     padding: 10px;
     background-color: white;
     border: 1px black solid;
@@ -71,7 +74,6 @@ li, a, button{
 
 .btn2 button{
     color: white;
-    margin: 10px;
     padding: 10px;
     background-color: black;
     border: 1px black solid;
@@ -86,11 +88,15 @@ li, a, button{
     background-color: navy;
 }
 
+
+
+
+
 /* SECTION ONE */
 
 .backg{
     background-color: whitesmoke;
-    height: 850px;
+    height: 800px;
     width: 350px;
     position: absolute;
     margin-left: 900px;
@@ -113,7 +119,7 @@ li, a, button{
 
 .h1{
     font-size: 65px;
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 .text1{
@@ -453,7 +459,7 @@ transform: rotate(-45deg);
     position: absolute;
     width: 250;
     height: 500px;
-    margin-left: 130px;
+    margin-left: 110px;
 }
 
 .dot2{
@@ -662,20 +668,25 @@ transform: rotate(-45deg);
 
 .fbox{
     width: 150px;
-    height: 200px;
+    height: fit-content;
 }
 
 .fbox4{
-    text-align: right;
+    display: block;
     width: 250px;
     height: 200px;
     margin-top: 20px;
+}
+
+.fbox4text{
+    text-align: right;
 }
 
 .social{
     width: 100px;
     margin-left: 150px;
     display: flex;
+    float: right;
     margin-bottom: 20px;
     justify-content: space-between;
 }
@@ -710,7 +721,365 @@ transform: rotate(-45deg);
 .section10{
     text-align: center;
     width: 80%;
-    margin: 100px 0;
+    margin: 70px 0;
     padding: 0 5%;
     line-height: 30px;
+}
+
+
+
+@media screen and (max-width:960px) {
+
+.container{
+    flex-direction: column;
+}
+
+/* NAVIGATION BAR */
+
+.header{
+    display: block;
+}
+
+.header ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header ul a{
+    display: block;
+    padding: 20px;
+}
+
+.logo{
+    padding-left: 0;
+    padding-top: 8px;
+}
+
+.btn1 button{
+    width: 90%;
+}
+
+.btn2 button{
+    width: 90%;
+}
+
+.menu{
+    clear:both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.menu li{
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+.header .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+    background-color: black;
+    display: block;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background-color: black;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+    background-color: black;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn:checked ~ .menu{
+    max-height: 500px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* SECTION ONE */
+
+.backg{
+    display: none;
+}
+
+.section1{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box1{
+    text-align: center;
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+.h1{
+    font-size: 47px;
+}
+
+.text1{
+    font-size: 15px;
+}
+
+.headbox{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.rect{ 
+    margin-left: 60px;
+}
+
+.rent{
+    margin-left: -40px;
+}
+
+.headerimg{
+    margin-left: 20px;  
+}
+
+.investify{
+    margin-left: 260px;
+}
+
+#circle1{
+    margin-left: 360px;  
+}
+
+#dotbox1{  
+    margin-left: -10px;
+}
+
+#dotbox2{   
+    margin-left: 20px;
+}
+
+/* SECTION TWO */
+
+.section2{
+    justify-content: center;
+    padding-right: 0;
+    margin-top: 700px;
+}
+
+.secure{
+    flex-direction: column;
+    text-align: center;
+}
+
+.h2{
+    font-size: 30px;
+}
+
+.text2{
+    font-size: 15px;
+}
+
+/* SECTION THREE */
+
+.section3{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box3{
+    width: 90%;
+    text-align: center;
+}
+
+.piggybank{
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.safelock{
+    width: 90%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* SECTION FOUR */
+
+.section4{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.emptybox{
+    display: none;
+}
+
+.target{
+    width: 85%;
+    text-align: center;
+}
+
+.flex{
+    width: 85%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* SECTION FIVE */
+
+.section5{
+    flex-direction: column;
+    align-items: center;
+}
+
+.box5{
+    width: 90%;
+}
+
+#dotbox3{
+    display: none;
+}
+
+#dotbox4{
+    display: none;
+}
+
+.box6{
+    width: 90%;
+    margin-top: 500px;
+    text-align: center;
+}
+
+.h5{
+    font-size: 42px;
+    margin-top: 0;
+}
+
+/* SECTION SIX */
+
+.section6{
+    flex-direction: column; 
+    width: 100%;
+    margin-top: 30px; 
+}
+
+.box7{
+    width: 100%;
+    text-align: center;
+}
+
+.h6{
+    font-size: 40px;
+}
+
+.saverimgdiv{
+    width: 100%;
+}
+
+/* SECTION SEVEN */
+
+.section7{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box9{
+    width: 98%;
+    margin-top: 50px;
+}
+
+.box10{ 
+    width: 100%;
+    text-align: center;
+}
+
+/* SECTION EIGHT */
+.section8{
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 20px 20px;
+}
+
+.featured{
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    margin-bottom: 20px;
+}
+
+.himg{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* SECTION NINE */
+
+.section9{
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.flogo{
+    padding-left: 39px;
+    padding-bottom: 30px;
+}
+
+.fbox4{
+    margin-left: 45px;
+}
+
+.fbox4text{
+    text-align: left;
+}
+
+.social{
+    margin-right: 150px;
+}
+
+/* SECTION TEN */
+
+.section10{
+    width: 100%;
+}
+
 }
