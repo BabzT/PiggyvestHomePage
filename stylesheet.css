@@ -851,6 +851,10 @@ transform: rotate(-45deg);
     padding-bottom: 50px;
 }
 
+.btn4{
+    margin-right: 5px;
+}
+
 .h1{
     font-size: 47px;
 }
@@ -865,31 +869,31 @@ transform: rotate(-45deg);
 }
 
 .rect{ 
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .rent{
-    margin-left: -40px;
+    margin-left: -60px;
 }
 
 .headerimg{
-    margin-left: 20px;  
+    margin-left: 0;  
 }
 
 .investify{
-    margin-left: 260px;
+    margin-left: 240px;
 }
 
 #circle1{
-    margin-left: 360px;  
+    margin-left: 340px;  
 }
 
 #dotbox1{  
-    margin-left: -10px;
+    margin-left: -30px;
 }
 
 #dotbox2{   
-    margin-left: 20px;
+    margin-left: 0;
 }
 
 /* SECTION TWO */
@@ -898,6 +902,10 @@ transform: rotate(-45deg);
     justify-content: center;
     padding-right: 0;
     margin-top: 700px;
+}
+
+.security{
+    margin-right: 0;
 }
 
 .secure{
